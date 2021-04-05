@@ -47,7 +47,6 @@ jobs:
         - name: Assemble
           run: gradle jar
 
-        # Place after first gradle command
         - id: getVersion
           run: echo "::set-output name=version::$(gradle printVersion | head -n 3 | tail -n 1)"
         
